@@ -18,6 +18,7 @@ ds_senha VARCHAR(50) NOT NULL
 
 CREATE TABLE crianca(
 id_crianca INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+id_responsavel INT NOT NULL,
 nm_nome_crianca VARCHAR(30) NOT NULL
 );
 
@@ -28,6 +29,8 @@ id_crianca INT,
 id_responsavel INT
 );
 
+ALTER TABLE
+  `crianca` ADD CONSTRAINT `fkcrianca_id_responsavel` FOREIGN KEY(`id_responsavel`) REFERENCES `responsavel`(`id_responsavel`);
 ALTER TABLE
   `responsavel_crianca` ADD CONSTRAINT `fkqrCode_id_crianca` FOREIGN KEY(`id_crianca`) REFERENCES `crianca`(`id_crianca`);
 ALTER TABLE
