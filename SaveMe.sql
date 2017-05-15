@@ -20,7 +20,12 @@ CREATE TABLE crianca(
 id_crianca INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 id_responsavel INT NOT NULL,
 nm_nome_crianca VARCHAR(30) NOT NULL,
-ds_perdido INT
+);
+
+CREATE TABLE localizados(
+id_localizados INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ds_perdido INT,
+ds_encontrado INT
 );
 
 CREATE TABLE responsavel_crianca(
