@@ -5,14 +5,13 @@ USE `saveMe`;
 CREATE TABLE responsavel(
 id_responsavel INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 nm_nome_responsavel VARCHAR(40) NOT NULL,
-nm_endereco VARCHAR(50) NOT NULL,
-nm_bairro VARCHAR(10) NOT NULL,
-nm_municipio VARCHAR(15) NOT NULL,
-cd_cep INT NOT NULL,
-nm_UF CHAR(2) NOT NULL,
+nm_endereco VARCHAR(50),
+nm_bairro VARCHAR(10),
+nm_municipio VARCHAR(15),
+cd_cep INT,
+nm_UF CHAR(2),
 cd_telefone VARCHAR(13) NOT NULL,
-nm_email VARCHAR(25) NOT NULL,
-ds_senha VARCHAR(50) NOT NULL
+nm_email VARCHAR(25) NOT NULL
 );
 
 
@@ -22,11 +21,6 @@ id_responsavel INT NOT NULL,
 nm_nome_crianca VARCHAR(30) NOT NULL,
 );
 
-CREATE TABLE localizados(
-id_localizados INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-ds_perdido INT,
-ds_encontrado INT
-);
 
 CREATE TABLE responsavel_crianca(
 id_qr_code INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
