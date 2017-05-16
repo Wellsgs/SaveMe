@@ -19,6 +19,7 @@ CREATE TABLE crianca(
 id_crianca INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 id_responsavel INT NOT NULL,
 nm_nome_crianca VARCHAR(30) NOT NULL,
+dt_data_nascimento DATE
 );
 
 
