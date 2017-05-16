@@ -4,6 +4,7 @@ USE `saveMe`;
 
 CREATE TABLE responsavel(
 id_responsavel INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+id_social INT
 nm_nome_responsavel VARCHAR(40) NOT NULL,
 nm_endereco VARCHAR(50),
 nm_bairro VARCHAR(10),
